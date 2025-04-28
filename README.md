@@ -1,54 +1,76 @@
-# Budget Tracker
-
-#### Video Demo: [Link to Video](https://youtu.be/YOUR_VIDEO_LINK_HERE)
-
-#### Description:
-
-The **Budget Tracker** is a simple Python program designed to help users manage their personal finances by tracking both income and expenses. This project is implemented with core Python libraries and features persistent data storage via a CSV file. Users can interact with the program through a text-based menu that allows them to add, view, and delete transactions, as well as summarize financial data by category and date range.
-
-This project was created for the **CS50’s Introduction to Programming with Python** course to demonstrate my understanding of Python fundamentals, including working with files, user input, handling exceptions, and structuring a program with multiple functions. 
-
-The primary goals of this project were:
-- To provide an intuitive way for users to manage their finances by tracking various types of transactions.
-- To develop Python skills such as handling CSV files, working with `datetime`, and using Python's built-in modules.
-- To build a testable and maintainable Python application using unit testing with `pytest`.
 
 ---
 
-### ✅ Features
+# **Mini-Projects Repository**
 
-- **Add Transactions:** Users can add transactions with a unique description, category, amount, and date. This allows for easy recording of income, expenses, or any other financial activity.
-- **Unique Transaction IDs:** Every transaction gets a unique ID (UUID) that ensures each transaction is individually identifiable and can be referenced or deleted easily.
-- **View Transactions:** Users can view all recorded transactions along with their details (date, description, category, and amount). A running balance is also displayed, helping the user to monitor their financial status at any point in time.
-- **Filter Transactions by Date:** The program allows users to filter and display transactions that fall within a specific date range. This is useful for monthly or quarterly reports.
-- **Monthly Summary:** The application can calculate and display a summary of all transactions within a given month. It helps users get an overview of their financial activities each month.
-- **Delete Transactions:** If a user needs to remove a transaction (for example, a mistake was made), they can delete it by entering the unique transaction ID.
-- **Data Persistence:** All transactions are stored in a CSV file (`transactions.csv`), which allows data to persist across program executions.
+Welcome to the Mini-Projects repository! 🚀  
+This repository contains practical Python projects designed to showcase skills in programming, problem-solving, and the use of various libraries. Each project demonstrates unique functionalities and aims to deliver hands-on experience with coding.
 
 ---
 
-### 📁 Project Structure
+## **Current Projects**
 
-The project consists of the following files:
+### **1. Budget Tracker**
 
+#### Video Demo: [Link to Video](https://youtu.be/YOUR_VIDEO_LINK_HERE)  
 
-- **`project.py`**: This file contains the main program logic, including all the functions for adding, viewing, deleting, and summarizing transactions.
-- **`test_project.py`**: Contains unit tests for ensuring the core functions of the program work correctly.
-- **`transactions.csv`**: Stores the transaction data in a comma-separated values format, making it easy to read and write.
-- **`requirements.txt`**: Lists all external dependencies for the project (currently only `pytest`).
+#### **Description**  
+The **Budget Tracker** is a Python program that helps users manage their personal finances by tracking income and expenses. It uses core Python libraries and persists data through a CSV file. Users can interact via a text-based menu to add, view, delete transactions, and summarize financial data by category or date range.
 
----
+#### **Features**  
+- **Add Transactions**: Record income, expenses, or other activities with descriptions, categories, amounts, and dates.  
+- **Unique Transaction IDs**: Each transaction has a unique ID for easy referencing and deletion.  
+- **View Transactions**: Display all transactions with details and a running balance.  
+- **Filter by Date**: Filter transactions within specific date ranges for targeted insights.  
+- **Monthly Summary**: Generate summaries of transactions for any given month.  
+- **Delete Transactions**: Remove transactions using their unique IDs.  
+- **Data Persistence**: Transactions are stored in a CSV file, ensuring data is available between program runs.  
 
-### 🧪 Testing
+#### **Project Structure**  
+- **`project.py`**: Main program logic.  
+- **`test_project.py`**: Unit tests for functionality.  
+- **`transactions.csv`**: Stores transaction data.  
+- **`requirements.txt`**: Dependencies (e.g., `pytest`).  
 
-The project includes unit tests for the core functionalities of the program. These tests are written using **`pytest`** and mock file I/O to ensure no actual file modification is done during testing. The tests include:
-
-- **Adding a transaction:** Ensures the correct format is written to the CSV file.
-- **Deleting a transaction:** Verifies that a transaction can be removed by its unique ID.
-- **Summarizing by month:** Checks that the program calculates totals for each month correctly.
-- **Viewing transactions by date:** Ensures that transactions are filtered correctly by date.
-
-Run the tests by executing the following command in the project directory:
-
+#### **Testing**  
+This project includes unit tests using `pytest`. Mock file I/O ensures tests do not modify real data.  
+- Tests include adding, deleting, and summarizing transactions, and filtering by date.  
+Run tests with:
 ```bash
 pytest test_project.py
+```
+
+---
+
+### **2. PDF to Audio Converter**
+
+#### **Description**  
+This project extracts text from a PDF file and converts it into spoken audio using Python. It leverages **PyMuPDF** for text extraction and **Google Text-to-Speech (gTTS)** for audio conversion. 
+
+#### **Features**  
+- Extracts text from each PDF page.  
+- Combines text into a single cohesive string.  
+- Converts text to an MP3 file.  
+
+#### **Usage**  
+1. Provide the path to the PDF file.  
+2. Run the script to generate an MP3 file in the project directory.
+
+---
+
+## **How to Contribute**
+
+Contributions are welcome!  
+1. Fork the repository.  
+2. Create a new branch for your changes.  
+3. Submit a pull request describing your additions or improvements.  
+
+---
+
+## **Getting Started**
+
+Clone the repository and start working on the projects:  
+```bash
+git clone https://github.com/ypushkala/python-mini-projects.git
+cd python-mini-projects
+```
